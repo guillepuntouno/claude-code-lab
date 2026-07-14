@@ -86,10 +86,31 @@ tener que reconstruirlo desde cero.
 - **Notas / hallazgos:**
 -->
 
-_Aún sin entradas._
+### Web / investigación autónoma (2026-07-14)
+- **Qué es:** Con `WebSearch` y `WebFetch` puedo investigar recursos públicos y con `curl`
+  comprobar conectividad, pero **no** navego con sesión autenticada ni inicio sesión como humano.
+- **Cómo se usa:** Para investigar plataformas y **construir herramientas** que el usuario ejecuta
+  con sus propias credenciales.
+- **Limitaciones:** Centros de ayuda con anti-bot devuelven 403 a `WebFetch`; hosts de API pueden
+  no responder al agente. El trabajo autenticado corre en la máquina del usuario, no en la mía.
+- **Notas:** Primer uso real en el frente Heartbeat (ver `docs/frentes/heartbeat/`).
+
+---
+
+## Registro de actividades (cont.)
+
+### 2026-07-14 — Primer experimento: investigación de Heartbeat
+
+- **Qué:** Investigar la viabilidad de respaldar íntegramente una comunidad de Heartbeat.
+- **Cómo:** Búsquedas web + comprobación de conectividad. Hallazgos documentados en
+  `docs/frentes/heartbeat/` y `experimentos/2026-07-14-heartbeat-backup/`.
+- **Por qué / conclusión:** El usuario es **miembro** (no owner), así que las vías limpias (API y
+  export) —que son de administrador— no aplican. Un respaldo integral no es alcanzable por medios
+  limpios; los videos están protegidos contra descarga por diseño. Se fijan límites: no romper DRM
+  ni sortear protecciones; sí es razonable conservar para uso personal el texto accesible en la UI.
 
 ---
 
 ## Pendientes / Ideas a explorar
 
-- [ ] Definir los "diferentes frentes" de trabajo a probar.
+- [ ] Heartbeat: definir qué contenido de texto conservar y en qué formato.
