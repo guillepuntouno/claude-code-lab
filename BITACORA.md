@@ -45,6 +45,10 @@ tener que reconstruirlo desde cero.
 - **Cómo:** `git init` en rama `main`, identidad local configurada, `.gitignore` que excluye
   `settings.local.json` (config personal) y ruido de SO/editores. Primer commit con la bitácora.
   El repo remoto lo crea Guillermo en github.com y luego se conecta con `git remote add` + `push`.
+  Publicado en **https://github.com/guillepuntouno/claude-code-lab**.
+  Autenticación: el entorno no tiene `gh` ni credenciales cacheadas; el push se hizo con un
+  Personal Access Token (fine-grained, scope *Contents: Read and write*) pasado de forma efímera
+  sin persistirlo en `origin` ni en disco.
 - **Por qué:** Tener historial de versiones de todo lo que experimentemos y un lugar público donde
   quede el conocimiento. Se eligió nombre tipo "lab" para comunicar que es un espacio de
   experimentación, no de producción.
