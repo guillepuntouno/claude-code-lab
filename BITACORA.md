@@ -38,6 +38,17 @@ tener que reconstruirlo desde cero.
 - **Por qué:** Establecer desde el arranque un lugar único donde quede el conocimiento de la
   herramienta y de las pruebas que vayamos haciendo.
 
+### 2026-07-14 — Repositorio git + GitHub
+
+- **Qué:** Se convierte el directorio en repositorio git y se prepara para publicarse en GitHub
+  (repo público en la cuenta personal `<correo-omitido>`).
+- **Cómo:** `git init` en rama `main`, identidad local configurada, `.gitignore` que excluye
+  `settings.local.json` (config personal) y ruido de SO/editores. Primer commit con la bitácora.
+  El repo remoto lo crea Guillermo en github.com y luego se conecta con `git remote add` + `push`.
+- **Por qué:** Tener historial de versiones de todo lo que experimentemos y un lugar público donde
+  quede el conocimiento. Se eligió nombre tipo "lab" para comunicar que es un espacio de
+  experimentación, no de producción.
+
 ---
 
 ## Capacidades exploradas
