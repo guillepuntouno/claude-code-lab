@@ -60,6 +60,19 @@ tener que reconstruirlo desde cero.
 - **Por qué:** El repositorio es público; los secretos y datos internos no deben quedar en el
   historial de git.
 
+### 2026-07-14 — Reescritura de historial y estructura del repo
+
+- **Qué:** Se elimina todo dato sensible del historial de git y se crea la estructura de carpetas
+  del laboratorio.
+- **Cómo:** `git filter-branch` reescribió el correo del autor (→ `noreply` de GitHub) y saneó el
+  contenido de los `.md` en todos los commits; se limpiaron backups (`refs/original`), reflog y
+  `gc`, seguido de `push --force`. Se añadieron `README.md` de portada, carpetas `docs/`
+  (con `frentes/`, `capacidades/`, `guias/`), `scripts/`, `experimentos/` y `plantillas/` con
+  plantillas base.
+- **Por qué:** Sanear el archivo actual no basta: los datos seguían en commits antiguos de un repo
+  público. La estructura separa lo cronológico (bitácora) de lo temático (`docs/`) y da un lugar
+  claro para scripts, experimentos y plantillas.
+
 ---
 
 ## Capacidades exploradas
