@@ -1,3 +1,7 @@
+# Secretos (NUNCA versionar)
+.github_token
+*.token
+
 # Configuración local/personal de Claude Code (no se versiona)
 .claude/settings.local.json
 
